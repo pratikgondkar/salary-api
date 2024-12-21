@@ -88,22 +88,23 @@
 			</plugin>
 			
 			<plugin>
-                                <groupId>com.github.spotbugs</groupId>
-                                <artifactId>spotbugs-maven-plugin</artifactId>
-                                <version>4.7.3.0</version>
-                                <executions>
-                                   <execution>
-                                           <goals>
-                                                <goal>spotbugs</goal>
-                                           </goals>
-                                  </execution>
-                               </executions>
-                           <configuration>
-                                <xmlOutput>true</xmlOutput>
-                                <outputDirectory>${project.build.directory}</outputDirectory>
-                                <failOnError>false</failOnError>
-                          </configuration>
-                       </plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.7.3.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>spotbugs</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <xmlOutput>true</xmlOutput>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <failOnError>false</failOnError>
+                </configuration>
+            </plugin>
+
 
 
 			<plugin>
